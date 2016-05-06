@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E50AB766152ABBA800152FB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50AB765152ABBA800152FB4 /* UIKit.framework */; };
+		E50AB768152ABBA800152FB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50AB767152ABBA800152FB4 /* Foundation.framework */; };
+		E50AB76A152ABBA800152FB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50AB769152ABBA800152FB4 /* CoreGraphics.framework */; };
+		E50AB770152ABBA800152FB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E50AB76E152ABBA800152FB4 /* InfoPlist.strings */; };
+		E50AB772152ABBA800152FB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E50AB771152ABBA800152FB4 /* main.m */; };
+		E50AB776152ABBA800152FB4 /* GOTGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E50AB775152ABBA800152FB4 /* GOTGAppDelegate.m */; };
+		E50AB77E152ABBA900152FB4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50AB77D152ABBA900152FB4 /* SenTestingKit.framework */; };
+		E50AB77F152ABBA900152FB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50AB765152ABBA800152FB4 /* UIKit.framework */; };
+		E50AB780152ABBA900152FB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50AB767152ABBA800152FB4 /* Foundation.framework */; };
+		E50AB788152ABBA900152FB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E50AB786152ABBA900152FB4 /* InfoPlist.strings */; };
+		E50AB78B152ABBA900152FB4 /* salpakanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E50AB78A152ABBA900152FB4 /* salpakanTests.m */; };
+		E50AB79B152AC20400152FB4 /* BoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E50AB799152AC20400152FB4 /* BoardViewController.m */; };
+		E50AB79C152AC20400152FB4 /* BoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E50AB79A152AC20400152FB4 /* BoardViewController.xib */; };
+		E50AB7A0152AC23900152FB4 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = E50AB79F152AC23900152FB4 /* Board.m */; };
+		E50AB7A3152AC27800152FB4 /* Tiles.m in Sources */ = {isa = PBXBuildFile; fileRef = E50AB7A2152AC27800152FB4 /* Tiles.m */; };
+		E50AB7A9152AD4C700152FB4 /* pieces.csv in Resources */ = {isa = PBXBuildFile; fileRef = E50AB7A8152AD4C700152FB4 /* pieces.csv */; };
+		E5EF5BB2152E0590008B2952 /* MagentaSquare.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BB1152E0590008B2952 /* MagentaSquare.png */; };
+		E5EF5BB5152E05A2008B2952 /* CyanSquare.png in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BB4152E05A2008B2952 /* CyanSquare.png */; };
+		E5EF5BC4152E9A93008B2952 /* Captain.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BB6152E9A93008B2952 /* Captain.gif */; };
+		E5EF5BC5152E9A93008B2952 /* LtColonel.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BB7152E9A93008B2952 /* LtColonel.gif */; };
+		E5EF5BC7152E9A93008B2952 /* Flag.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BB9152E9A93008B2952 /* Flag.gif */; };
+		E5EF5BC8152E9A93008B2952 /* 1StarGeneral.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BBA152E9A93008B2952 /* 1StarGeneral.gif */; };
+		E5EF5BC9152E9A93008B2952 /* 2StarGeneral.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BBB152E9A93008B2952 /* 2StarGeneral.gif */; };
+		E5EF5BCA152E9A93008B2952 /* 3StarGeneral.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BBC152E9A93008B2952 /* 3StarGeneral.gif */; };
+		E5EF5BCB152E9A93008B2952 /* 4StarGeneral.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BBD152E9A93008B2952 /* 4StarGeneral.gif */; };
+		E5EF5BCC152E9A93008B2952 /* 5StarGeneral.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BBE152E9A93008B2952 /* 5StarGeneral.gif */; };
+		E5EF5BCD152E9A93008B2952 /* 2ndLeutenant.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BBF152E9A93008B2952 /* 2ndLeutenant.gif */; };
+		E5EF5BCE152E9A93008B2952 /* 1stLeutenant.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BC0152E9A93008B2952 /* 1stLeutenant.gif */; };
+		E5EF5BCF152E9A93008B2952 /* Major.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BC1152E9A93008B2952 /* Major.gif */; };
+		E5EF5BD0152E9A93008B2952 /* Private.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BC2152E9A93008B2952 /* Private.gif */; };
+		E5EF5BD1152E9A93008B2952 /* Spy.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BC3152E9A93008B2952 /* Spy.gif */; };
+		E5EF5BD4152E9BEC008B2952 /* Colonel.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BD3152E9BEC008B2952 /* Colonel.gif */; };
+		E5EF5BD6152E9C63008B2952 /* Sergeant.gif in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BD5152E9C63008B2952 /* Sergeant.gif */; };
+		E5EF5BDD152EAC4A008B2952 /* BoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EF5BDC152EAC4A008B2952 /* BoardView.m */; };
+		E5EF5BEA152F9A28008B2952 /* faceoff_phone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5EF5BE9152F9A27008B2952 /* faceoff_phone.xib */; };
+		E5EF5BEC152FF9B4008B2952 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5EF5BEB152FF9B4008B2952 /* GameKit.framework */; };
+		E5EF5BF2153021F1008B2952 /* TileView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EF5BF1153021F1008B2952 /* TileView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E50AB781152ABBA900152FB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E50AB758152ABBA800152FB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E50AB760152ABBA800152FB4;
+			remoteInfo = salpakan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E50AB761152ABBA800152FB4 /* salpakan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = salpakan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E50AB765152ABBA800152FB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E50AB767152ABBA800152FB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E50AB769152ABBA800152FB4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E50AB76D152ABBA800152FB4 /* salpakan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "salpakan-Info.plist"; sourceTree = "<group>"; };
+		E50AB76F152ABBA800152FB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E50AB771152ABBA800152FB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E50AB773152ABBA800152FB4 /* salpakan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "salpakan-Prefix.pch"; sourceTree = "<group>"; };
+		E50AB774152ABBA800152FB4 /* GOTGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GOTGAppDelegate.h; sourceTree = "<group>"; };
+		E50AB775152ABBA800152FB4 /* GOTGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOTGAppDelegate.m; sourceTree = "<group>"; };
+		E50AB77C152ABBA900152FB4 /* salpakanTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = salpakanTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E50AB77D152ABBA900152FB4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E50AB785152ABBA900152FB4 /* salpakanTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "salpakanTests-Info.plist"; sourceTree = "<group>"; };
+		E50AB787152ABBA900152FB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E50AB789152ABBA900152FB4 /* salpakanTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = salpakanTests.h; sourceTree = "<group>"; };
+		E50AB78A152ABBA900152FB4 /* salpakanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = salpakanTests.m; sourceTree = "<group>"; };
+		E50AB798152AC20400152FB4 /* BoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardViewController.h; sourceTree = "<group>"; };
+		E50AB799152AC20400152FB4 /* BoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardViewController.m; sourceTree = "<group>"; };
+		E50AB79A152AC20400152FB4 /* BoardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoardViewController.xib; sourceTree = "<group>"; };
+		E50AB79E152AC23800152FB4 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		E50AB79F152AC23900152FB4 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		E50AB7A1152AC27800152FB4 /* Tiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiles.h; sourceTree = "<group>"; };
+		E50AB7A2152AC27800152FB4 /* Tiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiles.m; sourceTree = "<group>"; };
+		E50AB7A8152AD4C700152FB4 /* pieces.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pieces.csv; sourceTree = "<group>"; };
+		E5EF5BB1152E0590008B2952 /* MagentaSquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MagentaSquare.png; sourceTree = "<group>"; };
+		E5EF5BB4152E05A2008B2952 /* CyanSquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CyanSquare.png; sourceTree = "<group>"; };
+		E5EF5BB6152E9A93008B2952 /* Captain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Captain.gif; sourceTree = "<group>"; };
+		E5EF5BB7152E9A93008B2952 /* LtColonel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LtColonel.gif; sourceTree = "<group>"; };
+		E5EF5BB9152E9A93008B2952 /* Flag.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Flag.gif; sourceTree = "<group>"; };
+		E5EF5BBA152E9A93008B2952 /* 1StarGeneral.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1StarGeneral.gif; sourceTree = "<group>"; };
+		E5EF5BBB152E9A93008B2952 /* 2StarGeneral.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2StarGeneral.gif; sourceTree = "<group>"; };
+		E5EF5BBC152E9A93008B2952 /* 3StarGeneral.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 3StarGeneral.gif; sourceTree = "<group>"; };
+		E5EF5BBD152E9A93008B2952 /* 4StarGeneral.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 4StarGeneral.gif; sourceTree = "<group>"; };
+		E5EF5BBE152E9A93008B2952 /* 5StarGeneral.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 5StarGeneral.gif; sourceTree = "<group>"; };
+		E5EF5BBF152E9A93008B2952 /* 2ndLeutenant.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2ndLeutenant.gif; sourceTree = "<group>"; };
+		E5EF5BC0152E9A93008B2952 /* 1stLeutenant.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1stLeutenant.gif; sourceTree = "<group>"; };
+		E5EF5BC1152E9A93008B2952 /* Major.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Major.gif; sourceTree = "<group>"; };
+		E5EF5BC2152E9A93008B2952 /* Private.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Private.gif; sourceTree = "<group>"; };
+		E5EF5BC3152E9A93008B2952 /* Spy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Spy.gif; sourceTree = "<group>"; };
+		E5EF5BD3152E9BEC008B2952 /* Colonel.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Colonel.gif; sourceTree = "<group>"; };
+		E5EF5BD5152E9C63008B2952 /* Sergeant.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Sergeant.gif; sourceTree = "<group>"; };
+		E5EF5BDB152EAC49008B2952 /* BoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardView.h; sourceTree = "<group>"; };
+		E5EF5BDC152EAC4A008B2952 /* BoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardView.m; sourceTree = "<group>"; };
+		E5EF5BE9152F9A27008B2952 /* faceoff_phone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = faceoff_phone.xib; sourceTree = "<group>"; };
+		E5EF5BEB152FF9B4008B2952 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		E5EF5BF0153021F1008B2952 /* TileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileView.h; sourceTree = "<group>"; };
+		E5EF5BF1153021F1008B2952 /* TileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E50AB75E152ABBA800152FB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5EF5BEC152FF9B4008B2952 /* GameKit.framework in Frameworks */,
+				E50AB766152ABBA800152FB4 /* UIKit.framework in Frameworks */,
+				E50AB768152ABBA800152FB4 /* Foundation.framework in Frameworks */,
+				E50AB76A152ABBA800152FB4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50AB778152ABBA900152FB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50AB77E152ABBA900152FB4 /* SenTestingKit.framework in Frameworks */,
+				E50AB77F152ABBA900152FB4 /* UIKit.framework in Frameworks */,
+				E50AB780152ABBA900152FB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E50AB756152ABBA800152FB4 = {
+			isa = PBXGroup;
+			children = (
+				E50AB76B152ABBA800152FB4 /* salpakan */,
+				E50AB783152ABBA900152FB4 /* salpakanTests */,
+				E50AB764152ABBA800152FB4 /* Frameworks */,
+				E50AB762152ABBA800152FB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E50AB762152ABBA800152FB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E50AB761152ABBA800152FB4 /* salpakan.app */,
+				E50AB77C152ABBA900152FB4 /* salpakanTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E50AB764152ABBA800152FB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5EF5BEB152FF9B4008B2952 /* GameKit.framework */,
+				E50AB765152ABBA800152FB4 /* UIKit.framework */,
+				E50AB767152ABBA800152FB4 /* Foundation.framework */,
+				E50AB769152ABBA800152FB4 /* CoreGraphics.framework */,
+				E50AB77D152ABBA900152FB4 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E50AB76B152ABBA800152FB4 /* salpakan */ = {
+			isa = PBXGroup;
+			children = (
+				E50AB774152ABBA800152FB4 /* GOTGAppDelegate.h */,
+				E50AB775152ABBA800152FB4 /* GOTGAppDelegate.m */,
+				E5EF5BEE1530218E008B2952 /* Controller */,
+				E5EF5BED15302165008B2952 /* Model */,
+				E5EF5BEF153021B1008B2952 /* View */,
+				E50AB76C152ABBA800152FB4 /* Supporting Files */,
+			);
+			path = salpakan;
+			sourceTree = "<group>";
+		};
+		E50AB76C152ABBA800152FB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5EF5BD2152E9AA9008B2952 /* Images */,
+				E50AB7A8152AD4C700152FB4 /* pieces.csv */,
+				E50AB76D152ABBA800152FB4 /* salpakan-Info.plist */,
+				E50AB76E152ABBA800152FB4 /* InfoPlist.strings */,
+				E50AB771152ABBA800152FB4 /* main.m */,
+				E50AB773152ABBA800152FB4 /* salpakan-Prefix.pch */,
+				E5EF5BB1152E0590008B2952 /* MagentaSquare.png */,
+				E5EF5BB4152E05A2008B2952 /* CyanSquare.png */,
+				E5EF5BE9152F9A27008B2952 /* faceoff_phone.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E50AB783152ABBA900152FB4 /* salpakanTests */ = {
+			isa = PBXGroup;
+			children = (
+				E50AB789152ABBA900152FB4 /* salpakanTests.h */,
+				E50AB78A152ABBA900152FB4 /* salpakanTests.m */,
+				E50AB784152ABBA900152FB4 /* Supporting Files */,
+			);
+			path = salpakanTests;
+			sourceTree = "<group>";
+		};
+		E50AB784152ABBA900152FB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E50AB785152ABBA900152FB4 /* salpakanTests-Info.plist */,
+				E50AB786152ABBA900152FB4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5EF5BD2152E9AA9008B2952 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E5EF5BB6152E9A93008B2952 /* Captain.gif */,
+				E5EF5BB7152E9A93008B2952 /* LtColonel.gif */,
+				E5EF5BB9152E9A93008B2952 /* Flag.gif */,
+				E5EF5BBA152E9A93008B2952 /* 1StarGeneral.gif */,
+				E5EF5BD3152E9BEC008B2952 /* Colonel.gif */,
+				E5EF5BBB152E9A93008B2952 /* 2StarGeneral.gif */,
+				E5EF5BBC152E9A93008B2952 /* 3StarGeneral.gif */,
+				E5EF5BBD152E9A93008B2952 /* 4StarGeneral.gif */,
+				E5EF5BBE152E9A93008B2952 /* 5StarGeneral.gif */,
+				E5EF5BBF152E9A93008B2952 /* 2ndLeutenant.gif */,
+				E5EF5BC0152E9A93008B2952 /* 1stLeutenant.gif */,
+				E5EF5BC1152E9A93008B2952 /* Major.gif */,
+				E5EF5BD5152E9C63008B2952 /* Sergeant.gif */,
+				E5EF5BC2152E9A93008B2952 /* Private.gif */,
+				E5EF5BC3152E9A93008B2952 /* Spy.gif */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E5EF5BED15302165008B2952 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E50AB7A1152AC27800152FB4 /* Tiles.h */,
+				E50AB7A2152AC27800152FB4 /* Tiles.m */,
+				E50AB79E152AC23800152FB4 /* Board.h */,
+				E50AB79F152AC23900152FB4 /* Board.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E5EF5BEE1530218E008B2952 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E50AB798152AC20400152FB4 /* BoardViewController.h */,
+				E50AB799152AC20400152FB4 /* BoardViewController.m */,
+				E50AB79A152AC20400152FB4 /* BoardViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E5EF5BEF153021B1008B2952 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5EF5BDB152EAC49008B2952 /* BoardView.h */,
+				E5EF5BDC152EAC4A008B2952 /* BoardView.m */,
+				E5EF5BF0153021F1008B2952 /* TileView.h */,
+				E5EF5BF1153021F1008B2952 /* TileView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E50AB760152ABBA800152FB4 /* salpakan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E50AB78E152ABBA900152FB4 /* Build configuration list for PBXNativeTarget "salpakan" */;
+			buildPhases = (
+				E50AB75D152ABBA800152FB4 /* Sources */,
+				E50AB75E152ABBA800152FB4 /* Frameworks */,
+				E50AB75F152ABBA800152FB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = salpakan;
+			productName = salpakan;
+			productReference = E50AB761152ABBA800152FB4 /* salpakan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E50AB77B152ABBA900152FB4 /* salpakanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E50AB791152ABBA900152FB4 /* Build configuration list for PBXNativeTarget "salpakanTests" */;
+			buildPhases = (
+				E50AB777152ABBA900152FB4 /* Sources */,
+				E50AB778152ABBA900152FB4 /* Frameworks */,
+				E50AB779152ABBA900152FB4 /* Resources */,
+				E50AB77A152ABBA900152FB4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E50AB782152ABBA900152FB4 /* PBXTargetDependency */,
+			);
+			name = salpakanTests;
+			productName = salpakanTests;
+			productReference = E50AB77C152ABBA900152FB4 /* salpakanTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E50AB758152ABBA800152FB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = E50AB75B152ABBA800152FB4 /* Build configuration list for PBXProject "salpakan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E50AB756152ABBA800152FB4;
+			productRefGroup = E50AB762152ABBA800152FB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E50AB760152ABBA800152FB4 /* salpakan */,
+				E50AB77B152ABBA900152FB4 /* salpakanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E50AB75F152ABBA800152FB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50AB770152ABBA800152FB4 /* InfoPlist.strings in Resources */,
+				E50AB79C152AC20400152FB4 /* BoardViewController.xib in Resources */,
+				E50AB7A9152AD4C700152FB4 /* pieces.csv in Resources */,
+				E5EF5BB2152E0590008B2952 /* MagentaSquare.png in Resources */,
+				E5EF5BB5152E05A2008B2952 /* CyanSquare.png in Resources */,
+				E5EF5BC4152E9A93008B2952 /* Captain.gif in Resources */,
+				E5EF5BC5152E9A93008B2952 /* LtColonel.gif in Resources */,
+				E5EF5BC7152E9A93008B2952 /* Flag.gif in Resources */,
+				E5EF5BC8152E9A93008B2952 /* 1StarGeneral.gif in Resources */,
+				E5EF5BC9152E9A93008B2952 /* 2StarGeneral.gif in Resources */,
+				E5EF5BCA152E9A93008B2952 /* 3StarGeneral.gif in Resources */,
+				E5EF5BCB152E9A93008B2952 /* 4StarGeneral.gif in Resources */,
+				E5EF5BCC152E9A93008B2952 /* 5StarGeneral.gif in Resources */,
+				E5EF5BCD152E9A93008B2952 /* 2ndLeutenant.gif in Resources */,
+				E5EF5BCE152E9A93008B2952 /* 1stLeutenant.gif in Resources */,
+				E5EF5BCF152E9A93008B2952 /* Major.gif in Resources */,
+				E5EF5BD0152E9A93008B2952 /* Private.gif in Resources */,
+				E5EF5BD1152E9A93008B2952 /* Spy.gif in Resources */,
+				E5EF5BD4152E9BEC008B2952 /* Colonel.gif in Resources */,
+				E5EF5BD6152E9C63008B2952 /* Sergeant.gif in Resources */,
+				E5EF5BEA152F9A28008B2952 /* faceoff_phone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50AB779152ABBA900152FB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50AB788152ABBA900152FB4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E50AB77A152ABBA900152FB4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E50AB75D152ABBA800152FB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50AB772152ABBA800152FB4 /* main.m in Sources */,
+				E50AB776152ABBA800152FB4 /* GOTGAppDelegate.m in Sources */,
+				E50AB79B152AC20400152FB4 /* BoardViewController.m in Sources */,
+				E50AB7A0152AC23900152FB4 /* Board.m in Sources */,
+				E50AB7A3152AC27800152FB4 /* Tiles.m in Sources */,
+				E5EF5BDD152EAC4A008B2952 /* BoardView.m in Sources */,
+				E5EF5BF2153021F1008B2952 /* TileView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50AB777152ABBA900152FB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50AB78B152ABBA900152FB4 /* salpakanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E50AB782152ABBA900152FB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E50AB760152ABBA800152FB4 /* salpakan */;
+			targetProxy = E50AB781152ABBA900152FB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E50AB76E152ABBA800152FB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E50AB76F152ABBA800152FB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E50AB786152ABBA900152FB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E50AB787152ABBA900152FB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E50AB78C152ABBA900152FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E50AB78D152ABBA900152FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E50AB78F152ABBA900152FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "salpakan/salpakan-Prefix.pch";
+				INFOPLIST_FILE = "salpakan/salpakan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E50AB790152ABBA900152FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "salpakan/salpakan-Prefix.pch";
+				INFOPLIST_FILE = "salpakan/salpakan-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E50AB792152ABBA900152FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/salpakan.app/salpakan";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "salpakan/salpakan-Prefix.pch";
+				INFOPLIST_FILE = "salpakanTests/salpakanTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E50AB793152ABBA900152FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/salpakan.app/salpakan";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "salpakan/salpakan-Prefix.pch";
+				INFOPLIST_FILE = "salpakanTests/salpakanTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E50AB75B152ABBA800152FB4 /* Build configuration list for PBXProject "salpakan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E50AB78C152ABBA900152FB4 /* Debug */,
+				E50AB78D152ABBA900152FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E50AB78E152ABBA900152FB4 /* Build configuration list for PBXNativeTarget "salpakan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E50AB78F152ABBA900152FB4 /* Debug */,
+				E50AB790152ABBA900152FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E50AB791152ABBA900152FB4 /* Build configuration list for PBXNativeTarget "salpakanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E50AB792152ABBA900152FB4 /* Debug */,
+				E50AB793152ABBA900152FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E50AB758152ABBA800152FB4 /* Project object */;
+}
